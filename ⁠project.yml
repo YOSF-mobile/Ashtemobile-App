@@ -7,12 +7,7 @@ targets:
     platform: iOS
     deploymentTarget: "14.0"
     sources:
-      - path: AshteMobile/AshteMobileApp.swift
-    resources:
-      - path: AshteMobile/index.html
-      - path: AshteMobile/css
-      - path: AshteMobile/app
-      - path: AshteMobile/logo.png
+      - AshteMobile
     info:
       path: AshteMobile/Info.plist
     settings:
