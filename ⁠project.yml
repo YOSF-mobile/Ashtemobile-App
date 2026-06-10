@@ -19,3 +19,8 @@ targets:
       CODE_SIGNING_REQUIRED: NO
       CODE_SIGNING_ALLOWED: NO
       PRODUCT_BUNDLE_IDENTIFIER: com.ashtemobile.app
+schemes:
+  AshteMobile:
+    build:
+      targets:
+        AshteMobile: all
