@@ -14,8 +14,13 @@ jobs:
       - name: Install XcodeGen
         run: brew install xcodegen
         
-      - name: Generate Xcode Project
-        run: xcodegen generate
+      - name: Find and Fix Project File
+        run: |
+          # ئەم کۆدە خۆی فایلەکە دەدۆزێتەوە و ناوەکەی ڕاست دەکاتەوە لە هەر کوێیەک بێت
+          mv Project.yml project.yml 2>/dev/null || true
+          mv project.yaml project.yml 2>/dev/null || true
+          find . -iname "*project.y*ml*" -exec mv {} ./project.yml \; 2>/dev/null || true
+          xcodegen generate
         
       - name: Build App
         run: |
