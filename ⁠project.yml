@@ -7,14 +7,14 @@ targets:
     platform: iOS
     deploymentTarget: "14.0"
     sources:
-      - path: .
-        excludes:
-          - "**/*.plist"
-          - "project.yml"
-          - ".github"
-          - ".git"
+      - AshteMobileApp.swift
+    resources:
+      - index.html
+      - css
+      - app
+      - logo.png
     info:
-      path: AshteMobile/Info.plist
+      path: Info.plist
     settings:
       CODE_SIGNING_REQUIRED: NO
       CODE_SIGNING_ALLOWED: NO
