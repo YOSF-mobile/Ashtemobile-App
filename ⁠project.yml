@@ -7,9 +7,12 @@ targets:
     platform: iOS
     deploymentTarget: "14.0"
     sources:
-      - path: AshteMobile
+      - path: .
         excludes:
-          - "Info.plist"
+          - "**/*.plist"
+          - "project.yml"
+          - ".github"
+          - ".git"
     info:
       path: AshteMobile/Info.plist
     settings:
